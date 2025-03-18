@@ -43,7 +43,9 @@ rma/
 ├── node_modules/         # Project dependencies (generated after npm install)
 ├── test/                 # Test files
 │   └── index.test.js     # Test file for GraphQL queries
-├── model.js              # Menu data and GraphQL types and resolvers
+├── model/                # Data model
+│   └── index.js          # Menu data and GraphQL types and resolvers
+│   └── seed.js           # Data in a Menu
 ├── package.json          # Project metadata and scripts
 ├── index.js              # Server entry point
 ├── .env                  # Environment variables (optional)
@@ -53,7 +55,8 @@ rma/
 ### Key Files:
 - **`index.js`**: The entry point of the server. It initializes the Express app, sets up ApolloServer with GraphQL schema, and applies middleware.
 - **`test/index.test.js`**: Contains Jest tests to validate the GraphQL queries.
-- **`model.js`**: Contains the menu data and GraphQL types and resolvers.
+- **`model/index.js`**: Contains the GraphQL types and resolvers.
+- **`model/seed.js`**: Contains menu data.
 
 ## Starting the Server
 
