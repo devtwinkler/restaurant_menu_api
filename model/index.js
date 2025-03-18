@@ -1,5 +1,5 @@
 /**
- * @title QraphQL schema
+ * @title QraphQL schema & Resolver
  * @version 0.0.1
  * @author Taylor Fuller
  * @published 3/17/2025
@@ -9,7 +9,7 @@
 const { gql } = require("apollo-server-express")  //Loading GraphQL type dependancy
 const data = require("./seed")
 
-//Data type of GraphQL
+//Schema of GraphQL
 const types = gql`
   type MenuItem {
     name: String!
